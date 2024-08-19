@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+:root {
+    --color-primario: #e9c3c3;
+    --color-secundario:#8EC3C3;
+    --color-texto: #ffffff;
+    --funete-inter: 'inter';
+    --fuente-orbitron:'orbitron';
+}
+
+* { font-weight: 400;
+    font-family: var(--fuente-orbitron);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+    
+}
+body {
+    height: 100vh;
+   background-image: url(/assets/6939283_3422326.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    
+}
+
+.container{
+   
+    background-color: red;
+}
+
+.header{
+
+background-color: rgb(219, 31, 31);
+    background-color: var(--color-secundario);
+    height: 50px;
+    justify-content: space-around;
+    display: flex;
+
+
+}
+
+.principal_texto {
+    font-size: 34px;
+    font-weight: 500;
+    color: var(--color-texto);
+    background-color: var(--color-secundario);
+    justify-content: space-between;
+}
+
+.principal_navegador {
+    background-color: var(--color-primario);
+    color: var(--color-primario);
+    background-color: red;
+}
+
+.principal_navegador_tema {
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    color: var(--color-primario);
+
+}
+
+main {
+
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 90px;
+    background-color: var(--color-primario);
+}
+
+.text_area {
+    height: 669px;
+    width: 550px;
+    font-size: 24px;
+    padding: 20px 25px;
+    margin: 0px 50px;
+    margin-top: 80px;
+    color: #0A3871;
+    position: relative;
+    text-transform: lowercase;
+}
+
+::placeholder {
+    color: #0A3871;
+}
+.text_area :focus {
+    outline: none;
+}
+
+.información {
+    display: flex;
+    font-size: 12px;
+    margin: 5px 30px;
+    gap: 8px;
+}
+
+.mensaje1{
+    display: flex;
+
+}
+.mensaje {
+    height: 830px;
+    width: 530px;
+    background-repeat: no-repeat;
+    border: 5px solid blueviolet;
+    border-radius: 50px;
+    margin-left: 100px;
+    margin-top: 80px;
+
+}
+
+.mensaje :focus {
+    outline: none;
+}
+
+.mensaje_imagen {
+    height: 520px;
+    width: 480px;
+    padding: 50px 20px;
+    border-radius: 50px;
+    margin-left: 18px;
+}
+
+.mensaje_texto {
+    justify-content: center;
+    display: flex;
+    font-weight: 900;
+    font-size: 24px;
+}
+
+.mensaje_texto1 {
+    display: flex;
+    justify-content: center;
+    margin: 16px 90px;
+}
+
+.btn {
+    margin-top: 16px;
+}
+
+.btn_encriptar {
+    height: 67px;
+    width: 300px;
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    color: white;
+    border-radius: 24px;
+    cursor: pointer;
+    font-size: 16px;
+
+
+}
+
+.btn_desencriptar {
+    height: 67px;
+    width: 300px;
+    background-color: #D8DFE8;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+    border-radius: 24px;
+    font-size: 16px;
+    margin-left: 30px;
+    cursor: pointer;
+
+}
+
+.btn1 {
+    flex-direction: column;
+    margin: 20px 110px;
+
+}
+
+.btn1_copiar {
+    height: 67px;
+    width: 300px;
+    background-color: #D8DFE8;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+    border-radius: 24px;
+    font-size: 16px;
+    justify-content: flex-end;
+    cursor: pointer;
+
+}
+
+.btn1_limpiar {
+
+    height: 67px;
+    width: 300px;
+    background-color: #D8DFE8;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+    border-radius: 24px;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+
+}
+
+@media (max-width: 2618px) {
+    .header {
+        padding: 10%;
+    }
+
+    .text_area {
+        justify-content: center;
+        padding: 5%;
+    }
+
+    .btn {
+        width: auto;
+    }
+
+    .mensaje {
+        flex-direction: column-reverse;
+    }
+
+
+}
+@media (min-width: 950px) {
+    .header {
+        padding: 3% ;
+    }
+
+    .text_area {
+        justify-content: center;
+        padding: 3%;
+    }
+
+    .btn {
+        width: auto;
+    }
+
+    .mensaje {
+        align-content: flex-start;
+    }
+
+
+}

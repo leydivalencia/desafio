@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilos.css">
+    <title>Document</title>
+</head>
+
+<body >
+    <div class="container"></div>
+    
+<header class="header">
+        <div class="principal">
+            <img class="principal_texto" src="/assets/Logo.png" alt="">
+            <p class="principal_texto">Encriptador y desencriptador de texto</p>
+
+            <nav class="principal_navegador">
+                <button class="principal_navegador_tema" onclick="cambiotema"> <i class="fa-solid fa-moon"></i> Cambio
+                    Tema</button>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <textarea class="text_area" cols="30" rows="10"
+            placeholder="Ingrese el texto aquí">Ingrese el texto aquí</textarea>
+
+        <div class="información">
+            <img class="información_imagen" src="/assets/Group.png" alt="">
+            <h6 class="información_texto">Solo letras minúsculas y sin acentos</h6>
+
+        </div>
+        <div class="btn">
+            <button class="btn_encriptar" onclick="btnencriptador"> Encriptar</button>
+            <button class="btn_desencriptar" onclick="btndesencriptador">Desencriptador</button>
+        </div>
+    </section>
+
+    <section id="mensaje1">
+        <div class="mensaje">
+            <img class="mensaje_imagen" src="/assets/mensaje.png" alt="">
+            <p class="mensaje_texto">Ningún mensaje fue <br> encontrar </p>
+            <p class="mensaje_texto1"><strong>Ingresa el texto que desees encriptar o desencriptar. </strong></p>
+
+            <div class="btn1">
+                <button class="btn1_copiar" onclick="copiar()"> Copiar</button>
+                <button class="btn1_limpiar" onclick="copiar()"> Limpiar</button>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
